@@ -76,7 +76,7 @@ apt_cmplt <- cbind(apt_total_info[-null.idx, ], lon_lat_dt)
 apt_cmplt %<>% as.data.frame
 apt_cmplt[,c("long", "lat")] <- sapply(apt_cmplt[,c("long", "lat")], as.numeric)
 
-city.idx <- str_detect(apt_cmplt$kaptAddr, "구리시") # Or "남양주시.." Or Both.
+city.idx <- str_detect(apt_cmplt$kaptAddr, "구리시")
 apt_cmplt_slctd <- apt_cmplt[city.idx, ]
 ################################################################################
 # <3. 학원>
@@ -84,7 +84,7 @@ url_file <- "https://raw.githubusercontent.com/smldlyst/location-analysis/main/d
 academy <- read.csv(url_file, encoding='UTF-8')
 str(academy)
 
-api_key <- "Your_KaKao_API" # 카카오 API
+api_key <- "Your_KaKao_API"
 responses <- list()
 acaAddr <- academy$학원주소
 
@@ -120,7 +120,7 @@ academy_cmplt <- cbind(academy[-null.idx, ], lon_lat_dt)
 academy_cmplt[,c("long", "lat")] <- sapply(academy_cmplt[,c("long", "lat")], as.numeric)
 ################################################################################
 
-# Shiny App으로 서비스화 (반경 선택 기능, 기대이익 계산)
+# Shiny App으로 서비스화 (반경 선택에 따른 테이블 출력 및 기대이익 제공)
 school %<>% rename(주소=주.소)
 dim(school) # 구리시 학교 32개
 school$학교구분 <- NA
