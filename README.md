@@ -9,4 +9,4 @@
 1. KaKao API을 이용하여 아파트, 학원에 대한 주소정보를 통해 위경도 추출
 1. 학원으로부터 반경 선택 기능 및 기대이익 계산 기능을 가지고 있는 Shiny App 구현 
 
-아이디어 도움을 주신 이 : 임채오(https://blog.naver.com/chaeohyim)
+도움을 주신 이 : 임채오(https://blog.naver.com/chaeohyim)
