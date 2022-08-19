@@ -434,7 +434,7 @@ server <- function(input, output) {
       addAwesomeMarkers(lng = academy_cmplt$long,
                         lat = academy_cmplt$lat,
                         label = lapply(labs_acd, htmltools::HTML),
-                        icon = icon.acd)
+                        icon = icon.acd) %>%
 
       
       # 아파트 Marker
