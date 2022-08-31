@@ -10,5 +10,3 @@
 
 ![loation-analysis-shiny](https://user-images.githubusercontent.com/79900437/185560053-1d7a1e41-d237-4b98-bf9f-11c0749d4d24.gif)
 
-도움을 주신 이 : 임채오 님. (https://blog.naver.com/chaeohyim)
-
